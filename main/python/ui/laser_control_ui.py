@@ -285,7 +285,7 @@ class Ui_LaserControl(object):
         self.redef_1.setText(QtGui.QApplication.translate("LaserControl", "Reference object 1", None, QtGui.QApplication.UnicodeUTF8))
         self.redef_2.setText(QtGui.QApplication.translate("LaserControl", "Reference object 2", None, QtGui.QApplication.UnicodeUTF8))
         self.redef_3.setText(QtGui.QApplication.translate("LaserControl", "Reference object 3", None, QtGui.QApplication.UnicodeUTF8))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_config), QtGui.QApplication.translate("LaserControl", "Confituration", None, QtGui.QApplication.UnicodeUTF8))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_config), QtGui.QApplication.translate("LaserControl", "Configuration", None, QtGui.QApplication.UnicodeUTF8))
         self.trackMode.setText(QtGui.QApplication.translate("LaserControl", "Tracking mode", None, QtGui.QApplication.UnicodeUTF8))
         self.textEdit_2.setHtml(QtGui.QApplication.translate("LaserControl", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
