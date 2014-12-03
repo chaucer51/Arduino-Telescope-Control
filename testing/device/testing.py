@@ -26,7 +26,7 @@ import serial
 #
 #
 class Testing():
-	def __init__(self, usb_serial='/dev/ttyUSB0', usb_serial_baud=9600, timeout=2):
+	def __init__(self, usb_serial='/dev/tty.usbmodem3a21', usb_serial_baud=9600, timeout=2):
 		self.serial = serial.Serial(usb_serial, usb_serial_baud, timeout=timeout)
 
 	def sread(self):
@@ -122,7 +122,7 @@ class Testing():
 	# d = DºM'S'' => D+(M/60)+(S/60^2) degrees || D.dº
 	# From degrees to radians: (ndeg * pi)/180
 	def deg2rad(self, d):
-		exp1 = re.compile('^-?[0-9]{,3}(º|ᵒ)[0-9]{,3}'[0-9]{,3}([']{2}|")$')
+		exp1 = re.compile('^-?[0-9]{,3}(º|ᵒ)[0-9]{,3}\'[0-9]{,3}([\']{2}|")$')
 		exp2 = re.compile('^-?[0-9]{,3}.[0-9]{,6}(º|ᵒ)$')
 
 		if(not exp1.match(d) and not exp2.match(d)):

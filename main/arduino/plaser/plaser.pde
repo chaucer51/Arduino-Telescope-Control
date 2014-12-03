@@ -134,7 +134,7 @@ float serialGetFloat(){
  *
  * Obtains and executes the commands received by the serial port
  * 
- * Avaliable commands:
+ * Available commands:
  * 
  *-	'init' () -> (float px, float py)	Initializes the device and returns the steps by revolution obtained
  *- 'time' (float t)  -> ()		Sets initial observation time
